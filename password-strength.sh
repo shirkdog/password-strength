@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Password Demonstrator 
+# Password Strength Demonstrator 
 #
 # Version 1.1
 #
@@ -44,6 +44,8 @@ then
 fi
 
 clear
+echo "Password Strength Checker"
+echo
 echo "Instructions: start typing your password as the script will evaluate"
 echo "each character to demonstrate password strength and complexity"
 echo
@@ -126,13 +128,18 @@ do
 		LONG=1
 	fi
 	clear
+	echo
+	echo "Password Strength Checker"
+	echo
 	if [ "$VERBOSE" == "1" ];
 	then
 		echo "Password: $PASS"
 		echo "Cracklib: $CRACKLIB"
+		echo "Score: $SCORE out of 6"
+		echo
 	fi
 	echo "Length: $LENGTH Number: $NUM UpperCase: $UPPER LowerCase: $LOWER SpecialCharacter: $SPECIAL"
-	echo "$SCORE"
+	echo
 
 	if [ $SCORE -le 1 ];
 	then
