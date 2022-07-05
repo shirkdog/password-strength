@@ -4,8 +4,8 @@ Script to demonstrate password strength interactively as a teaching tool
 
 Requirements
 ------------
-bash
-cracklib
+* bash
+* cracklib (providing the cracklib-check binary)
 
 Usage
 ------------
